@@ -1,0 +1,321 @@
+@charset "utf-8";
+/* CSS Document */
+
+.background {
+  color: white;
+  background-color: #4f2300;
+background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23e5d090' fill-opacity='0.12' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+
+/* Start Header CSS----------------------------------------------------*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #fff5e0
+}
+
+.hidden {
+  display: none;
+}
+
+
+.logo {
+
+	margin: 10px ;
+	width: 130px;
+	height: 130px;
+
+}
+
+    .mainNav {
+
+      width: 500px;
+      height: 100px;
+      margin-top: 50px;
+      padding-right: 40px;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+
+    }
+.nav {
+
+  width: 80px;
+  height: 30px;
+  margin-top: 20px;
+
+  display: flex;
+
+}
+/*__Header end ____________________________________________________*/
+/*__Home start ____________________________________________________*/
+.core {
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+      .hero {
+
+        object-fit: hero;
+  width: 2098px;
+  height: 600px;
+  align-self: center;
+
+      }
+
+      .slide {
+          border: solid;
+          border-width: : 1px;
+        	border-color: #2a2d30;
+        	margin: 10px;
+        	width: 95%;
+        	height: 600px;
+      }
+/*__Home end ____________________________________________________*/
+/*__store start ____________________________________________________*/
+
+
+
+.saleContain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.slideContainer {
+
+  width:500px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  text-align: center;
+
+}
+
+.imageContainer {
+  width: 1500px;
+  height: 400px;
+  position: relative;
+  transition: left 2s;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+
+
+}
+
+.slideImage {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+.slideButtons {
+  top: -20px;
+  position: relative;
+}
+
+.slideButtons {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: #331702;
+}
+
+#slide1:target ~ .imageContainer {
+  left:0px;
+}
+}
+#slide2:target ~  .imageContainer {
+  left:500px;
+}
+#slide3:target ~  .imageContainer {
+  left:1000px;
+}
+
+.sale {
+  border: solid;
+  border-width: : 1px;
+  border-color: #2a2d30;
+  margin: 10px;
+  width:250px;
+  height: 250px;
+}
+
+/*__store end ____________________________________________________*/
+/*__contact start ____________________________________________________*/
+
+#mainContact {
+  width: 940px;
+  padding-top: 20px;
+  padding-left: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+#mainContact h2 {
+  font-size: 30px;
+  color: black;
+  background-color: #fff5e0;
+  margin-bottom: 40px;
+  padding: 8px 0px 8px 5px;
+  width: 940px;
+}
+
+#contactArea {
+  width: 469px;
+  border-right: solid 1px #CCC;
+  margin-bottom: 30px;
+}
+
+
+#contactText {
+  font-size: 21px;
+  margin-bottom: 30px;
+  width: 340px;
+}
+
+#contactForm {
+  margin-top: 30px;
+}
+
+fieldset {
+  border: none;
+  padding: 0px;
+}
+
+
+input, textarea  {
+  font-size: 11px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 300px;
+  height: 10px;
+  background-color: #efefef;
+  display: block;
+  border: 1px solid #999;
+  color: #333;
+}
+
+#comments {
+  width: 360px;
+  height: 200px;
+}
+
+#submit {
+  display: block;
+  width: 75px;
+  height: 30px;
+  text-align: center;
+  margin-top: 30px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #fff5e0;
+  font-size: 14px;
+  border: 1px solid #003471;
+}
+
+#mapArea {
+  width: 380px;
+  margin-left: 90px;
+}
+
+
+#mapArea h3 {
+  font-size: 21px;
+  margin-top: 0;
+  color: #2073a8;
+}
+
+#mapArea ul {
+  list-style-type: none;
+  padding: 0;
+}
+/* contact close______________________________________________________ */
+/* footer________________________________________________________ */
+
+
+.mainFooter {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  background-color: #331702;
+}
+
+.footerContain {
+  display: flex;
+  flex-direction: row;
+}
+
+.footerContain p {
+  margin-top: 40px;
+}
+
+.footerNav {
+  width: 380px;
+  height: 25px;
+  margin-left: 20px;
+}
+
+.footerNav ul {
+  padding: 0;
+  list-style-type: none;
+  width: 500px;
+  margin-left: 0;
+}
+
+.footerNav ul li {
+  cursor: pointer;
+  display: inline;
+  margin-right: 25px;
+  font-size: 12px;
+}
+
+.socialMedia {
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+
+#iconNav {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 25px;
+  padding-bottom: 25px;
+}
+
+#iconNav img {
+  width: 45px;
+  height: 45px;
+}
+
+#iconNav li {
+  display: inline;
+  margin-right: 10px;
+}
+ #iconNav li a {
+  filter: grayscale(100%);
+ }
+
+ #iconNav li a:hover {
+  filter: grayscale(0%);
+ }
